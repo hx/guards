@@ -1,0 +1,25 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./*.ts",
+    "**/*.spec.ts"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2019",
+      "es7",
+      "es6"
+    ],
+    "module": "commonjs",
+    "rootDir": "src",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

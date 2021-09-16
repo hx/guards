@@ -1,0 +1,35 @@
+{
+  "name": "@hxjs/guards",
+  "version": "1.0.2",
+  "description": "Composable type predicates for TypeScript",
+  "main": "dist/guards.js",
+  "types": "dist/guards.d.ts",
+  "files": [
+    "dist/**/*.{d.ts,js}"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "watch": "tsc -w",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hx/guards.git"
+  },
+  "author": "Neil E. Pearson",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hx/guards/issues"
+  },
+  "homepage": "https://github.com/hx/guards#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  }
+}
