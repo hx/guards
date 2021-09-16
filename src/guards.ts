@@ -83,7 +83,7 @@ const isStruct = <T>(members: { [K in keyof T]: Guard<T[K]> }, options: Partial<
   )
 }
 
-export default Object.assign(anyOf, {
+const g = Object.assign(anyOf, {
   number:     isNumber,
   string:     isString,
   boolean:    isBoolean,
@@ -104,3 +104,5 @@ export default Object.assign(anyOf, {
   falsy:      isFalsy,
   truthy:     isTruthy
 })
+
+export default g
